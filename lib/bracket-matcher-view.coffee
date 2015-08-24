@@ -3,15 +3,8 @@ _ = require 'underscore-plus'
 {Range} = require 'atom'
 TagFinder = require './tag-finder'
 
-startPairMatches =
-  '(': ')'
-  '[': ']'
-  '{': '}'
 
-endPairMatches =
-  ')': '('
-  ']': '['
-  '}': '{'
+
 
 pairRegexes = {}
 for startPair, endPair of startPairMatches
